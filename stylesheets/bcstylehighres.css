@@ -2,24 +2,51 @@ header {background-color: #3C78D8; width: 100%; float: left; clear: left; text-a
 	header a {color: #000000; text-decoration: none;}
 	header img {height: 165px;}
 
-nav {background-color: #4A86E8; width: 25%; float: right; clear: right; text-align: center; height: 80%; overflow: auto;}
+nav {background-color: #4A86E8; width: 25%; float: right; clear: right; text-align: center; overflow: auto;}
 	nav h1 {line-height: 72px; font-size: 50px;}
 	nav h2 {font-variant: small-caps; font-size: 30px;}
 	nav p {font-size: 14pt;}
-	nav div img {width: 15%; margin-left: 25px; margin-right: 25px;}
 
 body {background-color: #1C4587}
 
-section {overflow: auto; clear: left; height: 1180px;}
-	section div {background-color: #9FC5E8; width: 200px; height: 300px; border-radius: 20px; float: left; margin: 16px; text-align: center;}
-			section div:hover {border: solid #ffffff 3px; width: 194px; height: 294px;}
+section {overflow: auto; clear: left; height: 1180px; scrollbar-color: #16376c #16376c}
 		section div h2 {font-variant: small-caps;}
 		section div img {width: 100px; margin-bottom: 20px;}
 	section a {color: #000000; text-decoration: none;}
 	
-	section section {border-radius: 20px; background-color: #3D85C6; margin: 50px; overflow: visible;}
 		section section h1 {text-align: center; font-size: 80px; line-height: 10px;}
 		section section span {font-variant: small-caps; font-weight: bolder;}
-			.new {width: 700px; height: 825px; float: left;}
+		
+		.platformSelection {height: 120px; width: 100%; clear: both;}
+			.platformButton {width: 15%; margin-left: 25px; margin-right: 25px;}
+		
+		.indexGroup {border-radius: 20px; background-color: #3D85C6; margin: 50px; overflow: visible;}
+		
+		.new {width: 700px; height: 825px; float: left;}
 			
-			.featured {width: 934px; height: 825px; float: right; clear: right;}
+		.featured {width: 934px; height: 825px; float: right; clear: right;}
+		
+		.gbagames {width: 1400px; height: 825px; float: right;}
+		
+		
+		.installTile {background-color: #9FC5E8; width: 194px; height: 294px; border-radius: 20px; float: left; margin: 16px; text-align: center; padding: 3px}
+			.installTile:hover {border: solid #ffffff 3px; width: 194px; height: 294px; padding: 0px}
+			.platformIcon {height: 25px; width: 25px; clear: both;}
+			.platformIconBg {background-color: #9FC5E8; width: 25px; height: 25px; translate: 130px -90px; padding: 5px; border-radius: 100%;}
+			
+		.x2installTile {background-color: #9FC5E8; width: 424px; height: 294px; border-radius: 20px; float: left; margin: 16px; text-align: center; padding: 3px;}
+			.x2installTile:hover {border: solid #ffffff 3px; width: 424px; height: 294px; padding: 0px}
+			.x2platformIcon {height: 25px; width: 25px; clear: both;}
+			.x2platformIconBg {background-color: #9FC5E8; width: 25px; height: 25px; translate: 245px -90px; padding: 5px; border-radius: 100%;}
+			
+			
+		/* Install Tile Animation */
+			.installTile:hover {animation-name: tileHover; animation-duration: 0.5s; animation-fill-mode: forwards;}
+			.x2installTile:hover {animation-name: tileHover; animation-duration: 0.5s; animation-fill-mode: forwards;}
+			.platformButton:hover {animation-name: tileHover; animation-duration: 0.5s; animation-fill-mode: forwards;}
+		
+		
+		@keyframes tileHover {
+			to {translate: 0px -5px;}
+			from {translate: 0px 0px;}
+		}

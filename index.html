@@ -5,14 +5,12 @@
 			<title>Bypass Corner</title>
 			<style>
 			</style>
+			<!-- jQuery -->
+			<link src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
 			
-			<!-- High Res -->
-			<link rel="stylesheet" media="screen and (min-width: 1920px)" href="stylesheets/bcstylehighres.css">
-			
-			<!-- Low Res -->
-			<link rel="stylesheet" media="screen and (max-width: 1920px)" href="stylesheets/bcstylelowres.css">
-			<link rel="stylesheet" media="screen and (max-width: 1366px)" href="stylesheets/bcstylelowres.css">
-			<link rel="stylesheet" media="screen and (max-width: 1280px)" href="stylesheets/bcstylelowres.css">
+			<!-- Resolution Fix -->
+			<link rel="stylesheet" media="screen and (min-width: 2462px)" href="stylesheets/bcstylehighres.css">
+			<link rel="stylesheet" media="screen and (max-width: 2461px)" href="stylesheets/bcstylelowres.css">
 			
 			<!-- Favicon -->
 			<link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -24,13 +22,12 @@
 					<img src="images/bypasscorner.png">
 				</a>
 			</header>
-			<div style="height: 100%; background-color: #4A86E8">
 				<nav>
 					<h1>Navigation</h1>
-						<div style="height: 100px; width: 100%; clear: both;">
-							<a href="windows.html">"<img src="images/windows.png"></a>
-							<a href="ios.html"><img src="images/ios.png"></a>
-							<a href="linux.html"><img src="images/linux.png"></a>
+						<div class="platformSelection">
+							<a href="windows.html">"<img src="images/windows.png" class="platformButton"></a>
+							<a href="ios.html"><img src="images/ios.png" class="platformButton"></a>
+							<a href="linux.html"><img src="images/linux.png" class="platformButton"></a>
 						</div>
 					<h1>How to Use</h1>
 						<h2>Windows</h2>
@@ -53,187 +50,282 @@
 							<p>
 								Coming Soon!
 							</p>
-				</nav>	
-			</div>
+				</nav>
 			<section>
 				<!--New Additions-->
-				<section class="new">
-					<h1 class="new-h1">Newly Added</h1>
+				<section class="new indexGroup">
+					<h1 class="indexGroupHeading">Newly Added</h1>
 						
-						<a href="https://drive.google.com/file/d/1CebKy4VRma9Ta2Kakrh_7pIM1mGnnDGU/view?usp=sharing"><div>
+						<a href="https://drive.google.com/file/d/1CebKy4VRma9Ta2Kakrh_7pIM1mGnnDGU/view?usp=sharing"><div class="installTile">
 							<h2>mGBA</h2>
 							<img src="images/mgba.png" style="border-radius: 10px;">
 							<p>
 								Requires None
-								<br><br>
-								<span>
-									Windows
-								</span>
 							</p>
+							<div class="platformIconBg">
+								<img class="platformIcon" src="images/windows.png">
+							</div>
 						</div></a>
 						
-						<a href="https://drive.google.com/file/d/10RrgWm7p21jsZjmfEIb69q0ZBZ3i0Yns/view?usp=sharing"><div>
+						<a href="https://drive.google.com/file/d/10RrgWm7p21jsZjmfEIb69q0ZBZ3i0Yns/view?usp=sharing"><div class="installTile">
 							<h2>Pokemon Fire Red</h2>
 							<img src="images/pkmfirered.jpg" style="border-radius: 10px;">
 							<p>
 								Requires mGBA
-								<br><br>
-								<span>
-									All
-								</span>
 							</p>
+							<div class="platformIconBg">
+								<img class="platformIcon" src="images/mgba.png">
+							</div>
 						</div></a>
 						
-						<a href="https://drive.google.com/file/d/1Aix7m0leK--UuKcjCbbEZNwO2op_YrfR/view?usp=sharing"><div>
+						<a href="https://drive.google.com/file/d/1Aix7m0leK--UuKcjCbbEZNwO2op_YrfR/view?usp=sharing"><div class="installTile">
 							<h2>Pokemon Leaf Green</h2>
 							<img src="images/pkmleafgreen.jpg" style="border-radius: 10px;">
 							<p>
 								Requires mGBA
-								<br><br>
-								<span>
-									All
 								</span>
 							</p>
+							<div class="platformIconBg">
+								<img class="platformIcon" src="images/mgba.png">
+							</div>
 						</div></a>
 				
-						<a href="https://drive.google.com/file/d/1aLRTc-ADKf5T8KAZ2wsDAW53RyZTfh60/view?usp=sharing"><div>
+						<a href="https://drive.google.com/file/d/1aLRTc-ADKf5T8KAZ2wsDAW53RyZTfh60/view?usp=sharing"><div class="installTile">
 							<h2>Minecraft</h2>
 							<img src="images/minecraft.png" style="border-radius: 10px;">
 							<p>
 								Requires Minecraft Account
-								<br><br>
-								<span>
-									Linux
-								</span>
 							</p>
+							<div class="platformIconBg">
+								<img class="platformIcon" src="images/linux.png">
+							</div>
 						</div></a>	
 						
-						<a href="https://drive.google.com/file/d/1XhmxYoKZr0L-iwXpUQNVndmnpoU6fO4A/view?usp=sharing"><div>
+						<a href="https://drive.google.com/file/d/1XhmxYoKZr0L-iwXpUQNVndmnpoU6fO4A/view?usp=sharing"><div class="installTile">
 							<h2>Epic Games Launcher</h2>
 							<img src="images/epicgames.png" style="border-radius: 10px;">
 							<p>
 								Requires None
-								<br>
-								<span>
-									Windows
-								</span>
 							</p>
+							<div class="platformIconBg">
+								<img class="platformIcon" src="images/windows.png">
+							</div>
 						</div></a>
 				
-						<a href="https://drive.google.com/file/d/1zpdYFL05IUSNUycCLx7LbZb9nH-sV1Q-/view?usp=drive_link"><div>
+						<a href="https://drive.google.com/file/d/1zpdYFL05IUSNUycCLx7LbZb9nH-sV1Q-/view?usp=drive_link"><div class="installTile">
 							<h2>MultiMC</h2>
 							<img src="images/multimc.png" style="border-radius: 10px;">
 							<p>
 								Requires Java
-								<br><br>
-								<span>
-									Windows
-								</span>
-							</p>
+							<div class="platformIconBg">
+								<img class="platformIcon" src="images/windows.png">
+							</div>
 						</div></a>
 								
 								
 				</section>
 					
 					<!--Featured Content-->
-				<section class="featured">
-					<h1 class="featured-h1">Featured</h1>
+				<section class="featured indexGroup">
+					<h1 class="indexGroupHeading">Featured</h1>
 					
-						<a href="https://drive.google.com/file/d/1G4lay1rc_0r4Ppk_YOlLw_ENtQ-WChfG/view?usp=drive_link"><div>
+						<a href="https://drive.google.com/file/d/1G4lay1rc_0r4Ppk_YOlLw_ENtQ-WChfG/view?usp=drive_link"><div class="installTile">
 							<h2>Minecraft</h2>
 							<img src="images/minecraft.png" style="border-radius: 10px;">
 							<p>
 								Requires Java, Minecraft Account
-								<br><br>
-								<span>
-									Windows
-								</span>
 							</p>
+							<div class="platformIconBg">
+								<img class="platformIcon" src="images/windows.png">
+							</div>
 						</div></a>
 						
-						<a href="https://drive.google.com/file/d/152FaUYg_t7-Xzl45yki7KyRv2Elaqggj/view?usp=drive_link"><div>
+						<a href="https://drive.google.com/file/d/152FaUYg_t7-Xzl45yki7KyRv2Elaqggj/view?usp=drive_link"><div class="installTile">
 							<h2>Geometry Dash (1.9 GDPS)</h2>
 							<img src="images/19gdps.png">
 							<p>
 								Requires None
-								<br><br>
-								<span>
-									Windows
-								</span>
 							</p>
+							<div class="platformIconBg">
+								<img class="platformIcon" src="images/windows.png">
+							</div>
 						</div></a>
 						
-						<a href="https://drive.google.com/file/d/1noNOnmc9R-nDgXvj7bSop0GoYDw5kL9w/view?usp=drive_link"><div>
+						<a href="https://drive.google.com/file/d/1noNOnmc9R-nDgXvj7bSop0GoYDw5kL9w/view?usp=drive_link"><div class="installTile">
 							<h2>Steam</h2>
 							<img src="images/steam.png">
 							<p>
 								Requires Steam Account
-								<br><br>
-								<span>
-									Windows
-								</span>
 							</p>
+							<div class="platformIconBg">
+								<img class="platformIcon" src="images/windows.png">
+							</div>
 						</div></a>
 						
-						<a href="https://drive.google.com/file/d/1pxs6tislljDlZQw9qbDz_Zh8Hw3L2qkz/view?usp=drive_link"><div>
+						<a href="https://drive.google.com/file/d/1pxs6tislljDlZQw9qbDz_Zh8Hw3L2qkz/view?usp=drive_link"><div class="installTile">
 							<h2>Minecraft</h2>
 							<img src="images/minecraft.png" style="border-radius: 10px;">
 							<p>
 								Requires Minecraft Account
-								<br><br>
-								<span>
-									Mac
-								</span>
 							</p>
+							<div class="platformIconBg">
+								<img class="platformIcon" src="images/ios.png">
+							</div>
 				</div></a>
 				
-				<a href="https://drive.google.com/file/d/1_1KW4Ml5mufXSMsEiTjBKTItb7ISfECG/view?usp=drive_link"><div>
+				<a href="https://drive.google.com/file/d/1_1KW4Ml5mufXSMsEiTjBKTItb7ISfECG/view?usp=drive_link"><div class="installTile">
 					<h2>GD Launcher</h2>
 					<img src="images/gdlauncher.png">
 					<p>
 						Requires Minecraft Account
-								<br><br>
-								<span>
-									Windows
-								</span>
 					</p>
+							<div class="platformIconBg">
+								<img class="platformIcon" src="images/windows.png">
+							</div>
 				</div></a>
 				
-				<a href="https://drive.google.com/file/d/19p3Xc4as2ZYzfspKNbdFCVUSeRT08nQe/view?usp=drive_link"><div>
+				<a href="https://drive.google.com/file/d/19p3Xc4as2ZYzfspKNbdFCVUSeRT08nQe/view?usp=drive_link"><div class="installTile">
 					<h2>GD Launcher</h2>
 					<img src="images/gdlauncher.png">
 					<p>
 						Requires Minecraft Account
-								<br><br>
-								<span>
-									Mac
-								</span>
 					</p>
+							<div class="platformIconBg">
+								<img class="platformIcon" src="images/ios.png">
+							</div>
 				</div></a>
 				
-				<a href="https://drive.google.com/file/d/1zpdYFL05IUSNUycCLx7LbZb9nH-sV1Q-/view?usp=drive_link"><div>
+				<a href="https://drive.google.com/file/d/1zpdYFL05IUSNUycCLx7LbZb9nH-sV1Q-/view?usp=drive_link"><div class="installTile">
 					<h2>MultiMC</h2>
 					<img src="images/multimc.png" style="border-radius: 10px;">
 					<p>
 						Requires Java
-								<br><br>
-								<span>
-									Windows
-								</span>
 					</p>
+							<div class="platformIconBg">
+								<img class="platformIcon" src="images/windows.png">
+							</div>
 				</div></a>
 				
-				<a href="https://drive.google.com/file/d/1Oj3kkWuGys_ticWbwgO8If0ch_hj61_A/view?usp=drive_link"><div>
+				<a href="https://drive.google.com/file/d/1Oj3kkWuGys_ticWbwgO8If0ch_hj61_A/view?usp=drive_link"><div class="installTile">
 					<h2>MultiMC</h2>
 					<img src="images/multimc.png" style="border-radius: 10px;">
 					<p>
 						Requires None
-								<br><br>
-								<span>
-									Mac
-								</span>
 					</p>
+							<div class="platformIconBg">
+								<img class="platformIcon" src="images/ios.png">
+							</div>
 				</div></a>
+				</section>
+				
+				<!-- GBA Games -->
+				<section class="gbagames indexGroup">
+					<h1 class="indexGroupHeading">Gameboy Advance Titles</h1>
+				
+				<!-- mGBA -->
+				<a href="https://drive.google.com/file/d/1CebKy4VRma9Ta2Kakrh_7pIM1mGnnDGU/view?usp=sharing"><div class="x2installTile">
+					<h2>mGBA</h2>
+					<img src="images/mgba.png" style="border-radius: 10px;">
+					<p>
+						Requires None
+					</p>
+							<div class="x2platformIconBg">
+								<img class="x2platformIcon" src="images/windows.png">
+							</div>
+				</div></a>
+				
+				<a href="https://drive.google.com/file/d/1iazhujRw-gdElBjk0YXvxC-MoFWKB-dy/view?usp=sharing"><div class="x2installTile">
+					<h2>mGBA</h2>
+					<img src="images/mgba.png" style="border-radius: 10px;">
+					<p>
+						Requires None
+					</p>
+							<div class="x2platformIconBg">
+								<img class="x2platformIcon" src="images/ios.png">
+							</div>
+				</div></a>
+				
+				<a href="https://drive.google.com/file/d/1_7CDTz173ulu7xuU9Gk3QKqIsSrJljns/view?usp=sharing"><div class="x2installTile">
+					<h2>mGBA</h2>
+					<img src="images/mgba.png" style="border-radius: 10px;">
+					<p>
+						Requires None
+					</p>
+							<div class="x2platformIconBg">
+								<img class="x2platformIcon" src="images/linux.png">
+							</div>
+				</div></a>
+				
+				
+				<!-- Games -->
+						
+						<a href="https://drive.google.com/file/d/10RrgWm7p21jsZjmfEIb69q0ZBZ3i0Yns/view?usp=sharing"><div class="installTile">
+							<h2>Pokemon Fire Red</h2>
+							<img src="images/pkmfirered.jpg" style="border-radius: 10px;">
+							<p>
+								Requires mGBA
+							</p>
+							<div class="platformIconBg">
+								<img class="platformIcon" src="images/mgba.png">
+							</div>
+						</div></a>
+						
+						<a href="https://drive.google.com/file/d/1Aix7m0leK--UuKcjCbbEZNwO2op_YrfR/view?usp=sharing"><div class="installTile">
+							<h2>Pokemon Leaf Green</h2>
+							<img src="images/pkmleafgreen.jpg" style="border-radius: 10px;">
+							<p>
+								Requires mGBA
+						</p>
+						<div class="platformIconBg">
+							<img class="platformIcon" src="images/mgba.png">
+						</div>
+					</div></a>
+				
+				<a href="https://drive.google.com/file/d/1-pAbmcjq8Yu2CEyUEd28zUAefrAntTFp/view?usp=sharing"><div class="installTile">
+					<h2>Pokemon Ruby</h2>
+					<img src="images/pkmruby.jpg" style="border-radius: 10px;">
+					<p>
+								Requires mGBA
+					</p>
+							<div class="platformIconBg">
+								<img class="platformIcon" src="images/mgba.png">
+							</div>
+				</div></a>
+				
+				<a href="https://drive.google.com/file/d/1yO73VlK-pBMAokqqCZ-Sdttjc0QGYBqU/view?usp=sharing"><div class="installTile">
+					<h2>Pokemon Sapphire</h2>
+					<img src="images/pkmsapphire.jpg" style="border-radius: 10px;">
+					<p>
+								Requires mGBA
+					</p>
+							<div class="platformIconBg">
+								<img class="platformIcon" src="images/mgba.png">
+							</div>
+				</div></a>
+				
+				<a href="https://drive.google.com/file/d/1Iytk-fgMxTsq_X3nFoh82y4zYXNasid5/view?usp=sharing"><div class="installTile">
+					<h2>Pokemon Emerald</h2>
+					<img src="images/pkmemerald.jpg" style="border-radius: 10px;">
+					<p>
+								Requires mGBA
+					</p>
+							<div class="platformIconBg">
+								<img class="platformIcon" src="images/mgba.png">
+							</div>
+				</div></a>
+				
+				<a href="https://drive.google.com/file/d/1s3s8sb5PKqtzxRnUBc7l_TYmf5dbLUvW/view?usp=sharing"><div class="installTile">
+					<h2>Pokemon Mystery Dungeon</h2>
+					<img src="images/pkmmysterydungeonrrt.jpg" style="border-radius: 10px;">
+					<p>
+								Requires mGBA
+					</p>
+							<div class="platformIconBg">
+								<img class="platformIcon" src="images/mgba.png">
+							</div>
+				</div></a>
+					
+				
 				</section>
 			</section>
 		</body>
