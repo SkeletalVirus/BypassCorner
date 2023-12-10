@@ -6,6 +6,7 @@
 			<style></style>
 			
 			<!-- Resolution Fix -->
+			<link rel="stylesheet" media="screen and (orientation: portrait)" href="stylesheets/bcstylemobile.css">
 			<link rel="stylesheet" media="screen and (min-width: 2462px)" href="stylesheets/bcstylehighres.css">
 			<link rel="stylesheet" media="screen and (max-width: 2461px)" href="stylesheets/bcstylelowres.css">
 			
@@ -19,13 +20,12 @@
 					<img src="images/bypasscorner.png">
 				</a>
 			</header>
-			<div style="height: 100%; background-color: #4A86E8">
 				<nav>
 					<h1>Navigation</h1>
-						<div style="height: 100px; width: 100%;">
-							<a href="windows.html">"<img src="images/windows.png" class="platformButton"></a>
-							<a href="ios.html"><img src="images/ios.png" class="platformButton"></a>
-							<a href="linux.html"><img src="images/linux.png" class="platformButton"></a>
+						<div class="platformSelection">
+							<a href="windows.html"><div class="platformButton"><img src="images/windows.png" class="platformButtonImg"style="margin-left: 0px;"></div></a>
+							<a href="ios.html"><div class="platformButton"><img src="images/ios.png" class="platformButtonImg"></div></a>
+							<a href="linux.html"><div class="platformButton"><img src="images/linux.png" class="platformButtonImg" style="margin-right: 0px;"></div></a>
 						</div>
 					<h1>How to Use</h1>
 						<h2>Windows</h2>
@@ -49,8 +49,7 @@
 								Coming Soon!
 							</p>
 				</nav>	
-			</div>
-			<section>
+			<section class="tileArea">
 				<a href="https://drive.google.com/file/d/1pxs6tislljDlZQw9qbDz_Zh8Hw3L2qkz/view?usp=drive_link"><div class="installTile">
 					<h2>Minecraft</h2>
 					<img src="images/minecraft.png" style="border-radius: 10px;">
@@ -128,6 +127,46 @@
 					<img src="images/pkmmysterydungeonrrt.jpg" style="border-radius: 10px;">
 					<p>
 								Requires mGBA
+					</p>
+				</div></a>
+				
+				<a href="https://drive.google.com/file/d/1MvigGBbiK3ItRXbca6pJDD_McR8SOhIf/view?usp=sharing"><div class="installTile">
+					<h2>Citra</h2>
+					<img src="images/citra.png" style="border-radius: 10px;">
+					<p>
+								Requires None
+					</p>
+				</div></a>
+				
+				<a href="noinstall.html"><div class="installTile">
+					<h2>Pokemon Omega Ruby</h2>
+					<img src="images/pkmomegaruby.png" style="border-radius: 10px;">
+					<p>
+								Requires Citra
+					</p>
+				</div></a>
+				
+				<a href="noinstall.html"><div class="installTile">
+					<h2>Pokemon Alpha Sapphire</h2>
+					<img src="images/pkmalphasapphire.png" style="border-radius: 10px;">
+					<p>
+								Requires Citra
+					</p>
+				</div></a>
+				
+				<a href="noinstall.html"><div class="installTile">
+					<h2>Pokemon Ultra Sun</h2>
+					<img src="images/pkmultrasun.png" style="border-radius: 10px;">
+					<p>
+								Requires Citra
+					</p>
+				</div></a>
+				
+				<a href="noinstall.html"><div class="installTile">
+					<h2>Pokemon Ultra Moon</h2>
+					<img src="images/pkmultramoon.png" style="border-radius: 10px;">
+					<p>
+								Requires Citra
 					</p>
 				</div></a>
 			</section>

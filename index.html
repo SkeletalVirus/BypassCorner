@@ -9,6 +9,7 @@
 			<link src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
 			
 			<!-- Resolution Fix -->
+			<link rel="stylesheet" media="screen and (orientation: portrait)" href="stylesheets/bcstylemobile.css">
 			<link rel="stylesheet" media="screen and (min-width: 2462px)" href="stylesheets/bcstylehighres.css">
 			<link rel="stylesheet" media="screen and (max-width: 2461px)" href="stylesheets/bcstylelowres.css">
 			
@@ -23,38 +24,61 @@
 				</a>
 			</header>
 				<nav>
-					<h1>Navigation</h1>
-						<div class="platformSelection">
-							<a href="windows.html">"<img src="images/windows.png" class="platformButton"></a>
-							<a href="ios.html"><img src="images/ios.png" class="platformButton"></a>
-							<a href="linux.html"><img src="images/linux.png" class="platformButton"></a>
+					<div class="navMain">
+						<h1>Navigation</h1>
+							<div class="platformSelection">
+								<a href="windows.html"><div class="platformButton"><img src="images/windows.png" class="platformButtonImg"style="margin-left: 0px;"></div></a>
+								<a href="ios.html"><div class="platformButton"><img src="images/ios.png" class="platformButtonImg"></div></a>
+								<a href="linux.html"><div class="platformButton"><img src="images/linux.png" class="platformButtonImg" style="margin-right: 0px;"></div></a>
+							</div>
 						</div>
-					<h1>How to Use</h1>
-						<h2>Windows</h2>
-							<p>
-								Windows downloads are used for machines that run Windows Operating System. These typically are used in School Computer Labs
-							</p>
-						<h2>iOS</h2>
-							<p>
-								iOS downloads are used for Apple products. 
-							</p>
-						<h2>Linux</h2>
-							<p>
-								Linux downloads are used for any operating system that isn't Windows or iOS. The most common of these being ChromeOS
-							</p>
-						<h1>DISCLAIMER</h1>
-							<p>
-								This website is still in the early stages of development, so don't be too surprised if something bugs out, or the game you want isn't avaliable. If you encounter a bug, or want to suggest a game or software to be added, feel free to reach out to us at <a href="malito:bypasscornerhelp@gmail.com">bypasscornerhelp@gmail.com</a>! 
-							</p>
-						<h1>Changelog</h1>
-							<p>
-								Coming Soon!
-							</p>
+						<div class="navScroll">
+							<h1>How to Use</h1>
+								<h2>Windows</h2>
+									<p>
+										Windows downloads are used for machines that run Windows Operating System. These typically are used in School Computer Labs
+									</p>
+								<h2>iOS</h2>
+									<p>
+										iOS downloads are used for Apple products. 
+									</p>
+								<h2>Linux</h2>
+									<p>
+										Linux downloads are used for any operating system that isn't Windows or iOS. The most common of these being ChromeOS
+									</p>
+								<h1>DISCLAIMER</h1>
+									<p>
+										This website is still in the early stages of development, so don't be too surprised if something bugs out, or the game you want isn't avaliable. If you encounter a bug, or want to suggest a game or software to be added, feel free to reach out to us at <a href="malito:bypasscornerhelp@gmail.com">bypasscornerhelp@gmail.com</a>! 
+									</p>
+								<h1>Changelog</h1>
+									<h2>
+										12/09/2023 7:00PM EST
+									</h2><p>
+										Added Citra 3DS Emulator!<br> Along with this, we added the following ROMs to use with it:
+										<ul>
+											<li>Pokemon Omega Ruby
+											<li>Pokemon Alpha Sapphire
+											<li>Pokemon Ultra Sun
+											<li>Pokemon Ultra Moon
+										</ul>
+									</p>
+					</div>
 				</nav>
-			<section>
+			<section class="tileArea">
 				<!--New Additions-->
 				<section class="new indexGroup">
 					<h1 class="indexGroupHeading">Newly Added</h1>
+				
+						<a href="https://drive.google.com/file/d/1n-EVDnZehypE_x7u1w9Tsz4bXy5VSqkE/view?usp=sharing"><div class="installTile">
+							<h2>Citra</h2>
+							<img src="images/citra.png" style="border-radius: 10px;">
+							<p>
+										Requires None
+							</p>
+							<div class="platformIconBg">
+								<img class="platformIcon" src="images/windows.png">
+							</div>
+						</div></a>
 						
 						<a href="https://drive.google.com/file/d/1CebKy4VRma9Ta2Kakrh_7pIM1mGnnDGU/view?usp=sharing"><div class="installTile">
 							<h2>mGBA</h2>
@@ -111,16 +135,6 @@
 								<img class="platformIcon" src="images/windows.png">
 							</div>
 						</div></a>
-				
-						<a href="https://drive.google.com/file/d/1zpdYFL05IUSNUycCLx7LbZb9nH-sV1Q-/view?usp=drive_link"><div class="installTile">
-							<h2>MultiMC</h2>
-							<img src="images/multimc.png" style="border-radius: 10px;">
-							<p>
-								Requires Java
-							<div class="platformIconBg">
-								<img class="platformIcon" src="images/windows.png">
-							</div>
-						</div></a>
 								
 								
 				</section>
@@ -139,15 +153,37 @@
 								<img class="platformIcon" src="images/windows.png">
 							</div>
 						</div></a>
-						
-						<a href="https://drive.google.com/file/d/152FaUYg_t7-Xzl45yki7KyRv2Elaqggj/view?usp=drive_link"><div class="installTile">
-							<h2>Geometry Dash (1.9 GDPS)</h2>
-							<img src="images/19gdps.png">
+				
+						<a href="https://drive.google.com/file/d/1n-EVDnZehypE_x7u1w9Tsz4bXy5VSqkE/view?usp=sharing"><div class="installTile">
+							<h2>Citra</h2>
+							<img src="images/citra.png" style="border-radius: 10px;">
 							<p>
-								Requires None
+										Requires None
 							</p>
 							<div class="platformIconBg">
 								<img class="platformIcon" src="images/windows.png">
+							</div>
+						</div></a>
+						
+						<a href="noinstall.html"><div class="installTile">
+							<h2>Pokemon Omega Ruby</h2>
+							<img src="images/pkmomegaruby.png" style="border-radius: 10px;">
+							<p>
+								Requires Citra
+							</p>
+							<div class="platformIconBg">
+								<img class="platformIcon" src="images/citra.png">
+							</div>
+						</div></a>
+				
+						<a href="noinstall.html"><div class="installTile">
+							<h2>Pokemon Alpha Sapphire</h2>
+							<img src="images/pkmalphasapphire.png" style="border-radius: 10px;">
+							<p>
+								Requires Citra
+							</p>
+							<div class="platformIconBg">
+								<img class="platformIcon" src="images/citra.png">
 							</div>
 						</div></a>
 						
@@ -162,60 +198,40 @@
 							</div>
 						</div></a>
 						
-						<a href="https://drive.google.com/file/d/1pxs6tislljDlZQw9qbDz_Zh8Hw3L2qkz/view?usp=drive_link"><div class="installTile">
-							<h2>Minecraft</h2>
-							<img src="images/minecraft.png" style="border-radius: 10px;">
+						<a href="https://drive.google.com/file/d/1CebKy4VRma9Ta2Kakrh_7pIM1mGnnDGU/view?usp=sharing"><div class="installTile">
+							<h2>mGBA</h2>
+							<img src="images/mgba.png" style="border-radius: 10px;">
 							<p>
-								Requires Minecraft Account
+								Requires None
 							</p>
 							<div class="platformIconBg">
-								<img class="platformIcon" src="images/ios.png">
-							</div>
-				</div></a>
-				
-				<a href="https://drive.google.com/file/d/1_1KW4Ml5mufXSMsEiTjBKTItb7ISfECG/view?usp=drive_link"><div class="installTile">
-					<h2>GD Launcher</h2>
-					<img src="images/gdlauncher.png">
-					<p>
-						Requires Minecraft Account
-					</p>
-							<div class="platformIconBg">
 								<img class="platformIcon" src="images/windows.png">
 							</div>
-				</div></a>
-				
-				<a href="https://drive.google.com/file/d/19p3Xc4as2ZYzfspKNbdFCVUSeRT08nQe/view?usp=drive_link"><div class="installTile">
-					<h2>GD Launcher</h2>
-					<img src="images/gdlauncher.png">
-					<p>
-						Requires Minecraft Account
-					</p>
+						</div></a>
+						
+						<a href="https://drive.google.com/file/d/10RrgWm7p21jsZjmfEIb69q0ZBZ3i0Yns/view?usp=sharing"><div class="installTile">
+							<h2>Pokemon Fire Red</h2>
+							<img src="images/pkmfirered.jpg" style="border-radius: 10px;">
+							<p>
+								Requires mGBA
+							</p>
 							<div class="platformIconBg">
-								<img class="platformIcon" src="images/ios.png">
+								<img class="platformIcon" src="images/mgba.png">
 							</div>
-				</div></a>
-				
-				<a href="https://drive.google.com/file/d/1zpdYFL05IUSNUycCLx7LbZb9nH-sV1Q-/view?usp=drive_link"><div class="installTile">
-					<h2>MultiMC</h2>
-					<img src="images/multimc.png" style="border-radius: 10px;">
-					<p>
-						Requires Java
-					</p>
+						</div></a>
+						
+						<a href="https://drive.google.com/file/d/1Aix7m0leK--UuKcjCbbEZNwO2op_YrfR/view?usp=sharing"><div class="installTile">
+							<h2>Pokemon Leaf Green</h2>
+							<img src="images/pkmleafgreen.jpg" style="border-radius: 10px;">
+							<p>
+								Requires mGBA
+								</span>
+							</p>
 							<div class="platformIconBg">
-								<img class="platformIcon" src="images/windows.png">
+								<img class="platformIcon" src="images/mgba.png">
 							</div>
-				</div></a>
+						</div></a>
 				
-				<a href="https://drive.google.com/file/d/1Oj3kkWuGys_ticWbwgO8If0ch_hj61_A/view?usp=drive_link"><div class="installTile">
-					<h2>MultiMC</h2>
-					<img src="images/multimc.png" style="border-radius: 10px;">
-					<p>
-						Requires None
-					</p>
-							<div class="platformIconBg">
-								<img class="platformIcon" src="images/ios.png">
-							</div>
-				</div></a>
 				</section>
 				
 				<!-- GBA Games -->
