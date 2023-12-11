@@ -25,7 +25,7 @@ section {background-color: #1C4587; overflow: auto; clear: left; scrollbar-color
 		
 		.platformSelection {height: 120px; width: 95%; clear: both; margin: auto;}
 			.platformButton {width: 100px; height: 100px; margin-left: 25px; margin-right: 25px; float: left; border-radius: 15px;}
-			.platformButtonImg {width: 90px; height: 90px; margin: 5px;}
+			.platformButtonImg {width: 15%; height: 15%; margin: 5px;}
 		
 		.indexGroup {border-radius: 15px; background-color: #3D85C6; margin: 10px; overflow: visible;}
 		
