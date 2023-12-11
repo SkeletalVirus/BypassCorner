@@ -15,6 +15,10 @@
 			
 			<!-- Favicon -->
 			<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+			
+			<!-- Tile Content -->
+			<script type="application/javascript" src="/js/downloadContent.js" async></script>
+			
 		</head>
 		
 		<body>
@@ -27,9 +31,9 @@
 					<div class="navMain">
 						<h1>Navigation</h1>
 							<div class="platformSelection">
-								<a href="windows.html"><div class="platformButton"><img src="images/windows.png" class="platformButtonImg"style="margin-left: 0px;"></div></a>
-								<a href="ios.html"><div class="platformButton"><img src="images/ios.png" class="platformButtonImg"></div></a>
-								<a href="linux.html"><div class="platformButton"><img src="images/linux.png" class="platformButtonImg" style="margin-right: 0px;"></div></a>
+								<a href="windows.html"><img src="images/windows.png" class="platformButtonImg"></a>
+								<a href="ios.html"><img src="images/ios.png" class="platformButtonImg"></a>
+								<a href="linux.html"><img src="images/linux.png" class="platformButtonImg"></a>
 							</div>
 						</div>
 						<div class="navScroll">
@@ -52,6 +56,11 @@
 									</p>
 								<h1>Changelog</h1>
 									<h2>
+										12/10/2023 3:30PM EST
+									</h2><p>
+										3DS ROMs did not include<br>downloads upon release. This is due to their large file size,<br> causing them to take a long time to download and upload. All ROMs will become avaliable to download later today!
+									</p>
+									<h2>
 										12/09/2023 7:00PM EST
 									</h2><p>
 										Added Citra 3DS Emulator!<br> Along with this, we added the following ROMs to use with it:
@@ -64,7 +73,7 @@
 									</p>
 					</div>
 				</nav>
-			<section class="tileArea">
+			<section class="tileArea" onload="downloadContent.js">
 				<!--New Additions-->
 				<section class="new indexGroup">
 					<h1 class="indexGroupHeading">Newly Added</h1>
@@ -176,7 +185,7 @@
 							</div>
 						</div></a>
 				
-						<a href="noinstall.html"><div class="installTile">
+						<a href="https://drive.google.com/file/d/1CyfEXIJdWwQnTLHs_CaQqkeusyykmHyV/view?usp=sharing"><div class="installTile">
 							<h2>Pokemon Alpha Sapphire</h2>
 							<img src="images/pkmalphasapphire.png" style="border-radius: 10px;">
 							<p>

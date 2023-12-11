@@ -25,7 +25,7 @@ section {overflow: auto; clear: left; scrollbar-color: #16376c #16376c; overflow
 		
 		.platformSelection {height: 120px; width: 95%; clear: both; margin: auto;}
 			.platformButton {width: 80px; height: 80px; margin-left: 25px; margin-right: 25px; float: left; border-radius: 15px;}
-			.platformButtonImg {width: 70px; height: 70px; margin: 5px;}
+			/* .platformButtonImg {width: 70px; height: 70px; margin: 5px;} */
 		
 		.indexGroup {border-radius: 15px; background-color: #3D85C6; margin: 10px; overflow: visible;}
 		
@@ -44,3 +44,7 @@ section {overflow: auto; clear: left; scrollbar-color: #16376c #16376c; overflow
 		.x2installTile {background-color: #9FC5E8; width: 212px; height: 208px; border-radius: 20px; float: left; margin: 10px; text-align: center; padding: 3px;}
 			.x2platformIcon {height: 15px; width: 15px; clear: both;}
 			.x2platformIconBg {background-color: #9FC5E8; width: 15px; height: 15px; translate: 123px -60px; padding: 5px; border-radius: 100%;}
+			
+			/* Hide Nav Scrollbar */
+			.navScroll::-webkit-scrollbar {display: none;}
+			.navScroll {-ms-overflow-style: none; scrollbar-width: none}
