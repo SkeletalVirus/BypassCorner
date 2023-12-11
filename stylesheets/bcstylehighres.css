@@ -21,7 +21,7 @@ section {overflow: auto; clear: left; scrollbar-color: #16376c #16376c; overflow
 		section section span {font-variant: small-caps; font-weight: bolder;}
 		
 		.navMain {height: 250px;}
-		.navScroll {overflow: auto;; width: 100%; height: calc(100vh - 180px - 300px); padding: 1%}
+		.navScroll {overflow: auto; width: 100%; height: calc(100vh - 180px - 300px); padding: 1%; overflow-x: hidden;}
 		
 		.tileArea {height: calc(100vh - 180px);}
 		
