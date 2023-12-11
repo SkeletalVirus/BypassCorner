@@ -6,7 +6,7 @@ header {background-color: #3C78D8; width: 100%; float: left; clear: left; text-a
 	header a {color: #000000; text-decoration: none;}
 	header img {height: 110px;}
 
-nav {background-color: #4A86E8; width: 23%; float: right; clear: right; text-align: center; overflow: auto; min-height: 100%; padding: 1%;}
+nav {background-color: #4A86E8; width: 23%; float: right; clear: right; text-align: center; overflow: auto; min-height: 100%; padding: 1%; overflow-x: hidden;}
 	nav h1 {line-height: 30px; font-size: 37px;}
 	nav h2 {font-variant: small-caps; font-size: 30px;}
 	nav p {font-size: 14pt;}
