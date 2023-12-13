@@ -1,26 +1,11 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>EmulatorJS</title>
-
-        <link rel = icon href = docs/favicon.ico sizes = "16x16 32x32 48x48 64x64" type = image/vnd.microsoft.icon>
-        <meta name = viewport content = "width = device-width, initial-scale = 1">
-
-        <style>
-            body, html {
-                height: 100%;
-            }
-
-            body {
-                font-family: monospace;
-                font-weight: bold;
-                font-size: 20px;
-                margin: 0;
-                overflow: hidden;
-                background-color: #222
-            }
-
-            body, #box {
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta name = viewport content = "width = device-width, initial-scale = 1">
+			<title>Bypass Corner</title>
+			<style>
+			#box {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -57,8 +42,8 @@
             }
 
             #display {
-                width: 100%;
-                height: 100%
+                width: 50%;
+                height: 50%
             }
 
             select, button {
@@ -81,11 +66,91 @@
                 background-color: #666;
                 color: #ddd
             }
-        </style>
-    </head>
-
-    <body>
-        <div id = box>
+			</style>
+			<!-- jQuery -->
+			<link src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+			
+			<!-- Resolution Fix -->
+			<link rel="stylesheet" media="screen and (orientation: portrait)" href="stylesheets/bcstylemobile.css">
+			<link rel="stylesheet" media="screen and (min-width: 2462px)" href="stylesheets/bcstylehighres.css">
+			<link rel="stylesheet" media="screen and (max-width: 2461px)" href="stylesheets/bcstylelowres.css">
+			
+			<!-- Favicon -->
+			<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+			
+			<!-- Tile Content -->
+			<script type="application/javascript" src="/js/downloadContent.js" async></script>
+			
+		</head>
+		
+		<body>
+			<header>
+				<a href="index.html">
+					<img src="images/bypasscorner.png">
+				</a>
+			</header>
+				<nav>
+					<div class="navMain">
+						<h1>Navigation</h1>
+							<div class="platformSelection">
+								<a href="windows.html"><img src="images/windows.png" class="platformButtonImg"></a>
+								<a href="ios.html"><img src="images/ios.png" class="platformButtonImg"></a>
+								<a href="linux.html"><img src="images/linux.png" class="platformButtonImg"></a>
+								<a href="emulator.html"><img src="images/chrome.png" class="platformButtonImg"></a>
+							</div>
+						</div>
+						<div class="navScroll">
+							<h1>How to Use</h1>
+								<h2>Windows</h2>
+									<p>
+										Windows downloads are used for machines that run Windows Operating System. These typically are used in School Computer Labs
+									</p>
+								<h2>iOS</h2>
+									<p>
+										iOS downloads are used for Apple products. 
+									</p>
+								<h2>Linux</h2>
+									<p>
+										Linux downloads are used for any operating system that isn't Windows or iOS. The most common of these being ChromeOS
+									</p>
+								<h1>DISCLAIMER</h1>
+									<p>
+										This website is still in the early stages of development, so don't be too surprised if something bugs out, or the game you want isn't avaliable. If you encounter a bug, or want to suggest a game or software to be added, feel free to reach out to us at <a href="malito:bypasscornerhelp@gmail.com">bypasscornerhelp@gmail.com</a>! 
+									</p>
+								<h1>Changelog</h1>
+									<h2>
+										12/12/2023 8:00PM EST
+									</h2><p>
+										We have added a In-Browser Emulator! This is in very early access and there will be many bugs. This emulator <em>should</em> be compatible with all currently avaliable ROMs. Make sure to extract the .ZIP files before using them in the emulator.
+									</p>
+									<h2>
+										12/11/2023 9:30PM EST
+									</h2><p>
+										Upon further inspection, Citra does not support 3DS ROMs. All download links have been temporarily removed, and will be replaced with our own files. In the meantime, we are adding BlueStacks and Emulator Box to our library so you can enjoy the Generation 4 and 5 Pokemon games. We're sorry for the inconvenience.
+									</p>
+									<h2>
+										12/10/2023 3:30PM EST
+									</h2><p>
+										3DS ROMs did not include<br>downloads upon release. This is due to their large file size,<br> causing them to take a long time to download and upload. All ROMs will become avaliable to download later today!
+									</p>
+									<h2>
+										12/09/2023 7:00PM EST
+									</h2><p>
+										Added Citra 3DS Emulator!<br> Along with this, we added the following ROMs to use with it:
+										<ul>
+											<li>Pokemon Omega Ruby
+											<li>Pokemon Alpha Sapphire
+											<li>Pokemon Ultra Sun
+											<li>Pokemon Ultra Moon
+										</ul>
+									</p>
+					</div>
+				</nav>
+				<section class="tileArea">
+			
+				
+				<section>
+				<div id = box>
             <input type = file id = input>
             Drag ROM file or click here
         </div>
@@ -214,5 +279,124 @@
             box.ondragover = () => box.setAttribute("drag", true);
             box.ondragleave = () => box.removeAttribute("drag");
         </script>
-    </body>
-</html>
+
+				<!-- </section><section class="emulatorgames indexGroup"> -->
+					<!-- <h1 class="indexGroupHeading">Emulatable Games</h1> -->
+				
+				<!-- <a href="https://drive.google.com/file/d/10RrgWm7p21jsZjmfEIb69q0ZBZ3i0Yns/view?usp=sharing"><div class="installTile"> -->
+					<!-- <h2>Pokemon Fire Red</h2> -->
+					<!-- <img src="images/pkmfirered.jpg" style="border-radius: 10px;"> -->
+					<!-- <p> -->
+					<!-- </p> -->
+				<!-- </div></a> -->
+				
+				<!-- <a href="https://drive.google.com/file/d/1Aix7m0leK--UuKcjCbbEZNwO2op_YrfR/view?usp=sharing"><div class="installTile"> -->
+					<!-- <h2>Pokemon Leaf Green</h2> -->
+					<!-- <img src="images/pkmleafgreen.jpg" style="border-radius: 10px;"> -->
+					<!-- <p> -->
+					<!-- </p> -->
+				<!-- </div></a> -->
+				
+				<!-- <a href="https://drive.google.com/file/d/1-pAbmcjq8Yu2CEyUEd28zUAefrAntTFp/view?usp=sharing"><div class="installTile"> -->
+					<!-- <h2>Pokemon Ruby</h2> -->
+					<!-- <img src="images/pkmruby.jpg" style="border-radius: 10px;"> -->
+					<!-- <p> -->
+					<!-- </p> -->
+				<!-- </div></a> -->
+				
+				<!-- <a href="https://drive.google.com/file/d/1yO73VlK-pBMAokqqCZ-Sdttjc0QGYBqU/view?usp=sharing"><div class="installTile"> -->
+					<!-- <h2>Pokemon Sapphire</h2> -->
+					<!-- <img src="images/pkmsapphire.jpg" style="border-radius: 10px;"> -->
+					<!-- <p> -->
+					<!-- </p> -->
+				<!-- </div></a> -->
+				
+				<!-- <a href="https://drive.google.com/file/d/1Iytk-fgMxTsq_X3nFoh82y4zYXNasid5/view?usp=sharing"><div class="installTile"> -->
+					<!-- <h2>Pokemon Emerald</h2> -->
+					<!-- <img src="images/pkmemerald.jpg" style="border-radius: 10px;"> -->
+					<!-- <p> -->
+					<!-- </p> -->
+				<!-- </div></a> -->
+				
+				<!-- <a href="https://drive.google.com/file/d/1s3s8sb5PKqtzxRnUBc7l_TYmf5dbLUvW/view?usp=sharing"><div class="installTile"> -->
+					<!-- <h2>Pokemon Mystery Dungeon</h2> -->
+					<!-- <img src="images/pkmmysterydungeonrrt.jpg" style="border-radius: 10px;"> -->
+					<!-- <p> -->
+					<!-- </p> -->
+				<!-- </div></a> -->
+				
+				<!-- <a href="https://drive.google.com/file/d/1fRiyeXFeTvouSeoFnqdpY_pIFwVt5TGN/view?usp=sharing"><div class="installTile"> -->
+					<!-- <h2>Pokemon Black</h2> -->
+					<!-- <img src="images/pkmblack.jpg" style="border-radius: 10px;"> -->
+					<!-- <p> -->
+					<!-- </p> -->
+				<!-- </div></a> -->
+				
+				<!-- <a href="https://drive.google.com/file/d/19vYwCxKP51A82uczCVNX6MkiT2HCo8Fc/view?usp=sharing"><div class="installTile"> -->
+					<!-- <h2>Pokemon White</h2> -->
+					<!-- <img src="images/pkmwhite.jpg" style="border-radius: 10px;"> -->
+					<!-- <p> -->
+					<!-- </p> -->
+				<!-- </div></a> -->
+				
+				<!-- <a href="https://drive.google.com/file/d/1zlEL2ExsDEG5GmNdshiXxb3Ozi0kalKa/view?usp=sharing"><div class="installTile"> -->
+					<!-- <h2>Pokemon Black 2</h2> -->
+					<!-- <img src="images/pkmblack2.jpg" style="border-radius: 10px;"> -->
+					<!-- <p> -->
+					<!-- </p> -->
+				<!-- </div></a> -->
+				
+				<!-- <a href="https://drive.google.com/file/d/18zkxcJFS-nXO44VuXwwnPsL57Y074y4l/view?usp=sharing"><div class="installTile"> -->
+					<!-- <h2>Pokemon White 2</h2> -->
+					<!-- <img src="images/pkmwhite2.jpg" style="border-radius: 10px;"> -->
+					<!-- <p> -->
+					<!-- </p> -->
+				<!-- </div></a> -->
+				
+				<!-- <a href="https://drive.google.com/file/d/16oe4a3QaQVMM3-1OS1Ih6HpUVvMWCx6Y/view?usp=sharing"><div class="installTile"> -->
+					<!-- <h2>Pokemon Diamond</h2> -->
+					<!-- <img src="images/pkmdiamond.jpg" style="border-radius: 10px;"> -->
+					<!-- <p> -->
+					<!-- </p> -->
+				<!-- </div></a> -->
+				
+				<!-- <a href="https://drive.google.com/file/d/1utYuN7mtRqMU3bnJpZ2d-i3A2jVrq2Gh/view?usp=sharing"><div class="installTile"> -->
+					<!-- <h2>Pokemon Pearl</h2> -->
+					<!-- <img src="images/pkmpearl.jpg" style="border-radius: 10px;"> -->
+					<!-- <p> -->
+					<!-- </p> -->
+				<!-- </div></a> -->
+				
+				<!-- <a href="https://drive.google.com/file/d/1utYuN7mtRqMU3bnJpZ2d-i3A2jVrq2Gh/view?usp=sharing"><div class="installTile"> -->
+					<!-- <h2>Pokemon Platinum</h2> -->
+					<!-- <img src="images/pkmplatinum.jpg" style="border-radius: 10px;"> -->
+					<!-- <p> -->
+					<!-- </p> -->
+				<!-- </div></a> -->
+				
+				<!-- <a href="https://drive.google.com/file/d/121UGVef_arGECZ8OotArHgk-DTWks_At/view?usp=sharing"><div class="installTile"> -->
+					<!-- <h2>Pokemon Heart Gold</h2> -->
+					<!-- <img src="images/pkmheartgold.jpg" style="border-radius: 10px;"> -->
+					<!-- <p> -->
+					<!-- </p> -->
+				<!-- </div></a> -->
+				
+				<!-- <a href="https://drive.google.com/file/d/1at7pN9JuZTIHkLr20apKoZLd637nWHk4/view?usp=sharing"><div class="installTile"> -->
+					<!-- <h2>Pokemon Soul Silver</h2> -->
+					<!-- <img src="images/pkmsoulsilver.jpg" style="border-radius: 10px;"> -->
+					<!-- <p> -->
+					<!-- </p> -->
+				<!-- </div></a> -->
+					
+				<!-- <a href=""><div class="installTile"> -->
+					<!-- <h2>Coming Soon</h2> -->
+					<!-- <img src="images/nyi.png"> -->
+					<!-- <p> -->
+					<!-- </p> -->
+				<!-- </div></a> -->
+				
+				</section>
+				</section>
+				
+		</body>
+	</html>
