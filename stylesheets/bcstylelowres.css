@@ -43,7 +43,7 @@ section {background-color: #1C4587; overflow: auto; clear: left; scrollbar-color
 		.installTile {background-color: #9FC5E8; width: 93px; height: 214px; border-radius: 20px; float: left; margin: 10px; text-align: center; padding: 3px;}
 			.installTile:hover {border: solid #ffffff 3px; width: 93px; height: 214px; padding: 0px}
 			.platformIcon {height: 15px; width: 15px; clear: both;}
-			.platformIconBg {background-color: #9FC5E8; width: 15px; height: 15px; translate: 60px -60px; padding: 5px; border-radius: 100%;}
+			.platformIconBg {background-color: #9FC5E8; width: 15px; height: 15px; translate: 60px -15px; padding: 5px; border-radius: 100%; margin-bottom: -20px;}
 			
 		.x2installTile {background-color: #9FC5E8; width: 212px; height: 208px; border-radius: 20px; float: left; margin: 10px; text-align: center; padding: 3px;}
 			.x2installTile:hover {border: solid #ffffff 3px; width: 212px; height: 208px; padding: 0px;}
