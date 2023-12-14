@@ -9,6 +9,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+				float: left;
             }
 
             #box {
@@ -45,7 +46,6 @@
                 width: 50%;
                 height: 50%;
 				float: left;
-				clear: left;
             }
 
             select, button {
@@ -148,10 +148,7 @@
 									</p>
 					</div>
 				</nav>
-				<section class="tileArea">
-			
-				
-				<section>
+				<section class="tileArea" id="section">
 				<div id = box>
             <input type = file id = input>
             Drag ROM file or click here
@@ -238,6 +235,7 @@
                     })
                 })(parts.pop())
 
+				const section = document.getElementById("section")
                 const div = document.createElement("div")
                 const sub = document.createElement("div")
                 const script = document.createElement("script")
@@ -247,7 +245,7 @@
 
                 box.remove()
                 div.appendChild(sub)
-                document.body.appendChild(div)
+				section.appendChild(div)
 
                 window.EJS_player = "#game";
                 window.EJS_gameName = parts.shift();
@@ -397,7 +395,7 @@
 					<!-- </p> -->
 				<!-- </div></a> -->
 				
-				</section>
+				<!-- </section> -->
 				</section>
 				
 		</body>
