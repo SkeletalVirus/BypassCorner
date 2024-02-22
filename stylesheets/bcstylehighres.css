@@ -31,6 +31,7 @@ section {overflow: auto; clear: left; scrollbar-color: #16376c #16376c; overflow
 		
 		.indexGroup {border-radius: 20px; background-color: #3D85C6; margin: 50px; overflow: visible;}
 			.indexGroupHeading {margin-bottom: 20px; text-align: center; font-size: 30pt;}
+			.indexGroupDoubleHeading {margin-bottom: 20px; text-align: center; font-size: 30pt;}
 		
 		.new {width: 700px; height: 750px; float: left;}
 			
