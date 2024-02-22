@@ -33,15 +33,15 @@ section {background-color: #1C4587; overflow: auto; clear: left; scrollbar-color
 		.indexGroup {border-radius: 15px; background-color: #3D85C6; margin: 10px; overflow: visible;}
 			.indexGroupHeading {margin-bottom: 20px;}
 		
-		.new {width: 360px; height: 570px; float: left;}
+		.new {width: 360px; height: 550px; float: left;}
 			
-		.featured {width: 480px; height: 570px; float: right; clear: right;}
+		.featured {width: 480px; height: 550px; float: right; clear: right;}
 		
-		.gbagames {width: 715px; height: 570px; float: left; clear: none;}
+		.gbagames {width: 715px; height: 550px; float: left; clear: none;}
 		
 		.emulatorgames {width: 960px; height: 550px; float: left; margin-left: 10px;}
 
-		
+		.beatmaps {width: 360px; height: 550px; float: left;}
 		
 		.installTile {background-color: #9FC5E8; width: 93px; height: 214px; border-radius: 20px; float: left; margin: 10px; text-align: center; padding: 3px;}
 			.installTile:hover {border: solid #ffffff 3px; width: 93px; height: 214px; padding: 0px}
