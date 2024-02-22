@@ -41,7 +41,7 @@ section {background-color: #1C4587; overflow: auto; clear: left; scrollbar-color
 		
 		.emulatorgames {width: 960px; height: 550px; float: left; margin-left: 10px;}
 
-		.beatmaps {width: 360px; height: 550px; float: left;}
+		.beatmaps {width: 360px; height: 600px; float: right;}
 		
 		.installTile {background-color: #9FC5E8; width: 93px; height: 214px; border-radius: 20px; float: left; margin: 10px; text-align: center; padding: 3px;}
 			.installTile:hover {border: solid #ffffff 3px; width: 93px; height: 214px; padding: 0px}
