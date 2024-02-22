@@ -71,3 +71,4 @@ section {overflow: auto; clear: left; scrollbar-color: #16376c #16376c; overflow
 		@keyframes platformButtonHover {
 			to {translate: 0px -5px;}
 			from {translate: 0px 0px;}
+		}
